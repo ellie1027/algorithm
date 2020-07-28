@@ -1,4 +1,4 @@
-package examples;
+package examples.LinkedList;
 
 //링크드 리스트의 헤더를 데이터가 아닌 링크드 리스트의 시작을 알리는 용도로 만듬
 //헤더가 삭제되었을시 헤더의 주소를 가지고 있는 데이터가 없도록 하기를 위함
