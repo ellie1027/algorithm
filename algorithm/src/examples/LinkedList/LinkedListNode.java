@@ -61,7 +61,7 @@ class LinkedList {
 	//포인터 사용하여 구현해보기
 	//중복 제거 함수
 	//버퍼 사용 하는 것보다 시간은 더 많이 들지만 공간 효율성이 우수
-	void removeDups() {
+	void removeDups() {  
 		Node n = header;
 		while(n != null && n.next != null) {
 			Node r = n;
