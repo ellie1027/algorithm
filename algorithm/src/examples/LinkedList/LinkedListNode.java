@@ -1,5 +1,7 @@
 package examples.LinkedList;
 
+import examples.LinkedList.LinkedList.Node;
+
 //링크드 리스트의 헤더를 데이터가 아닌 링크드 리스트의 시작을 알리는 용도로 만듬
 //헤더가 삭제되었을시 헤더의 주소를 가지고 있는 데이터가 없도록 하기를 위함
 class LinkedList {
@@ -11,8 +13,16 @@ class LinkedList {
 	}
 	
 	LinkedList() {
-		header = new Node();
+		header = new Node();		
 	}
+	
+	public Node get(int c) {
+		Node n = header;
+		for(int i = 0; i < c; i++) {
+			n = n.next;
+		}
+		return n;
+	}	
 	
 	//단방향 링크드 리스트에 데이터 추가 
 	void append(int d) {
@@ -74,10 +84,8 @@ class LinkedList {
 			}
 			n = n.next;
 		}
-	}	
-	
+	}		
 }
-
 
 public class LinkedListNode {
 	
@@ -94,6 +102,8 @@ public class LinkedListNode {
 		ll.retrieve();
 		ll.removeDups();
 		ll.retrieve();
+		
+		Node s = ll.get(5);
 
     }
 
