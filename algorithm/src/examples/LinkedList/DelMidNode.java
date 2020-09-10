@@ -15,6 +15,7 @@ public class DelMidNode {
 		Node next = node.next;
 		//다음 데이터로 바꿈
 		node.data = next.data;
+		//다음 노드로 바꿈
 		node.next = next.next;
 		
 		return true;		
